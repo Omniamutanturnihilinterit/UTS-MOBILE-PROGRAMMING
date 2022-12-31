@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#FFBB86FC">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="MUHAMMAD FARHAN NPM 43E57006195026"
+        android:textAlignment="center"
+        android:textColorHighlight="@color/purple_500"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:background="#f8eff8f3"
+        android:hint="Nama "
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/name"
+        android:background="#f8eff8f3"
+        android:hint="Email"
+        android:padding="16dp" />
+
+    <EditText android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="16dp"
+        android:background="#f8eff8f3"
+        android:hint="Subjek"
+        android:padding="16dp" />
+
+    <EditText android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/subject"
+        android:layout_marginTop="16dp"
+        android:background="#f8eff8f3"
+        android:gravity="top"
+        android:hint="Pesan"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/submit2"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message"
+        android:drawableRight="@drawable/ic_baseline_send_24"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:text="KIRIM"
+        android:onClick="pesan" />
+
+    <Button
+        android:id="@+id/submit1"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message"
+        android:drawableRight="@drawable/ic_baseline_web_24"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="5dp"
+        android:padding="16dp"
+        android:text="WEBSITE"
+        android:onClick="buka" />
+
+    <Button
+        android:id="@+id/submit3"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit1"
+        android:drawableRight="@drawable/ic_baseline_contact_phone_24"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:text="TELEPON"
+        android:onClick="panggil" />
+
+    <Button
+        android:id="@+id/submit4"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit3"
+        android:drawableRight="@drawable/ic_baseline_perm_device_information_24"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:text="TENTANG APLIKASI" />
+
+</RelativeLayout>
